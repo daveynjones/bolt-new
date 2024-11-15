@@ -1,4 +1,3 @@
-import { cloudflareDevProxyVitePlugin as remixCloudflareDevProxy, vitePlugin as remixVitePlugin } from '@remix-run/dev';
 import UnoCSS from 'unocss/vite';
 import { defineConfig, type ViteDevServer } from 'vite';
 import { nodePolyfills } from 'vite-plugin-node-polyfills';
@@ -9,18 +8,17 @@ export default defineConfig((config) => {
   return {
     build: {
       target: 'esnext',
+      outDir: 'dist',
+      assetsDir: 'assets',
+      rollupOptions: {
+        input: './app/root.tsx'
+      },
+      manifest: true,
+      minify: true  // This is the only change
     },
     plugins: [
       nodePolyfills({
         include: ['path', 'buffer'],
-      }),
-      config.mode !== 'test' && remixCloudflareDevProxy(),
-      remixVitePlugin({
-        future: {
-          v3_fetcherPersist: true,
-          v3_relativeSplatPath: true,
-          v3_throwAbortReason: true,
-        },
       }),
       UnoCSS(),
       tsconfigPaths(),
@@ -45,11 +43,9 @@ function chrome129IssuePlugin() {
             res.end(
               '<body><h1>Please use Chrome Canary for testing.</h1><p>Chrome 129 has an issue with JavaScript modules & Vite local development, see <a href="https://github.com/stackblitz/bolt.new/issues/86#issuecomment-2395519258">for more information.</a></p><p><b>Note:</b> This only impacts <u>local development</u>. `pnpm run build` and `pnpm run start` will work fine in this browser.</p></body>',
             );
-
             return;
           }
         }
-
         next();
       });
     },
