@@ -222,9 +222,6 @@ importers:
       vitest:
         specifier: ^2.0.1
         version: 2.0.1(@types/node@20.14.9)(sass@1.77.6)
-      wrangler:
-        specifier: ^3.63.2
-        version: 3.63.2(@cloudflare/workers-types@4.20240620.0)
       zod:
         specifier: ^3.23.8
         version: 3.23.8
@@ -5527,6 +5524,7 @@ snapshots:
   '@cloudflare/kv-asset-handler@0.3.4':
     dependencies:
       mime: 3.0.0
+    optional: true
 
   '@cloudflare/workerd-darwin-64@1.20240701.0':
     optional: true
@@ -5670,18 +5668,21 @@ snapshots:
   '@cspotcode/source-map-support@0.8.1':
     dependencies:
       '@jridgewell/trace-mapping': 0.3.9
+    optional: true
 
   '@emotion/hash@0.9.1': {}
 
   '@esbuild-plugins/node-globals-polyfill@0.2.3(esbuild@0.17.19)':
     dependencies:
       esbuild: 0.17.19
+    optional: true
 
   '@esbuild-plugins/node-modules-polyfill@0.2.2(esbuild@0.17.19)':
     dependencies:
       esbuild: 0.17.19
       escape-string-regexp: 4.0.0
       rollup-plugin-node-polyfills: 0.2.1
+    optional: true
 
   '@esbuild/aix-ppc64@0.21.5':
     optional: true
@@ -5917,7 +5918,8 @@ snapshots:
 
   '@eslint/object-schema@2.1.4': {}
 
-  '@fastify/busboy@2.1.1': {}
+  '@fastify/busboy@2.1.1':
+    optional: true
 
   '@floating-ui/core@1.6.7':
     dependencies:
@@ -5996,6 +5998,7 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
+    optional: true
 
   '@jspm/core@2.0.1': {}
 
@@ -6734,6 +6737,7 @@ snapshots:
   '@types/node-forge@1.3.11':
     dependencies:
       '@types/node': 20.14.9
+    optional: true
 
   '@types/node@20.14.9':
     dependencies:
@@ -7169,6 +7173,7 @@ snapshots:
   acorn-walk@8.3.3:
     dependencies:
       acorn: 8.12.0
+    optional: true
 
   acorn@8.12.0: {}
 
@@ -7249,6 +7254,7 @@ snapshots:
   as-table@1.0.55:
     dependencies:
       printable-characters: 1.0.42
+    optional: true
 
   asn1.js@4.10.1:
     dependencies:
@@ -7299,7 +7305,8 @@ snapshots:
       inherits: 2.0.4
       readable-stream: 3.6.2
 
-  blake3-wasm@2.1.5: {}
+  blake3-wasm@2.1.5:
+    optional: true
 
   bn.js@4.12.0: {}
 
@@ -7447,6 +7454,7 @@ snapshots:
       tslib: 2.6.3
     transitivePeerDependencies:
       - supports-color
+    optional: true
 
   ccount@2.0.1: {}
 
@@ -7584,7 +7592,8 @@ snapshots:
 
   cookie-signature@1.2.1: {}
 
-  cookie@0.5.0: {}
+  cookie@0.5.0:
+    optional: true
 
   cookie@0.6.0: {}
 
@@ -7647,7 +7656,8 @@ snapshots:
 
   csstype@3.1.3: {}
 
-  data-uri-to-buffer@2.0.2: {}
+  data-uri-to-buffer@2.0.2:
+    optional: true
 
   data-uri-to-buffer@3.0.1: {}
 
@@ -8009,7 +8019,8 @@ snapshots:
       '@types/estree-jsx': 1.0.5
       '@types/unist': 2.0.10
 
-  estree-walker@0.6.1: {}
+  estree-walker@0.6.1:
+    optional: true
 
   estree-walker@2.0.2: {}
 
@@ -8233,6 +8244,7 @@ snapshots:
     dependencies:
       data-uri-to-buffer: 2.0.2
       source-map: 0.6.1
+    optional: true
 
   get-stream@6.0.1: {}
 
@@ -8246,7 +8258,8 @@ snapshots:
     dependencies:
       is-glob: 4.0.3
 
-  glob-to-regexp@0.4.1: {}
+  glob-to-regexp@0.4.1:
+    optional: true
 
   glob@10.4.2:
     dependencies:
@@ -8702,6 +8715,7 @@ snapshots:
   magic-string@0.25.9:
     dependencies:
       sourcemap-codec: 1.4.8
+    optional: true
 
   magic-string@0.30.10:
     dependencies:
@@ -9417,7 +9431,8 @@ snapshots:
 
   mime@2.6.0: {}
 
-  mime@3.0.0: {}
+  mime@3.0.0:
+    optional: true
 
   mimic-fn@2.1.0: {}
 
@@ -9441,6 +9456,7 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+    optional: true
 
   minimalistic-assert@1.0.1: {}
 
@@ -9517,7 +9533,8 @@ snapshots:
 
   ms@2.1.3: {}
 
-  mustache@4.2.0: {}
+  mustache@4.2.0:
+    optional: true
 
   nanoid@3.3.6: {}
 
@@ -9539,7 +9556,8 @@ snapshots:
       fetch-blob: 3.2.0
       formdata-polyfill: 4.0.10
 
-  node-forge@1.3.1: {}
+  node-forge@1.3.1:
+    optional: true
 
   node-releases@2.0.14: {}
 
@@ -9748,7 +9766,8 @@ snapshots:
 
   path-to-regexp@0.1.7: {}
 
-  path-to-regexp@6.2.2: {}
+  path-to-regexp@6.2.2:
+    optional: true
 
   path-type@4.0.0: {}
 
@@ -9873,7 +9892,8 @@ snapshots:
     dependencies:
       parse-ms: 2.1.0
 
-  printable-characters@1.0.42: {}
+  printable-characters@1.0.42:
+    optional: true
 
   proc-log@3.0.0: {}
 
@@ -10193,14 +10213,17 @@ snapshots:
       estree-walker: 0.6.1
       magic-string: 0.25.9
       rollup-pluginutils: 2.8.2
+    optional: true
 
   rollup-plugin-node-polyfills@0.2.1:
     dependencies:
       rollup-plugin-inject: 3.0.2
+    optional: true
 
   rollup-pluginutils@2.8.2:
     dependencies:
       estree-walker: 0.6.1
+    optional: true
 
   rollup@4.18.0:
     dependencies:
@@ -10255,6 +10278,7 @@ snapshots:
     dependencies:
       '@types/node-forge': 1.3.11
       node-forge: 1.3.1
+    optional: true
 
   semver@6.3.1: {}
 
@@ -10349,7 +10373,8 @@ snapshots:
 
   source-map@0.7.4: {}
 
-  sourcemap-codec@1.4.8: {}
+  sourcemap-codec@1.4.8:
+    optional: true
 
   space-separated-tokens@2.0.2: {}
 
@@ -10382,12 +10407,14 @@ snapshots:
     dependencies:
       as-table: 1.0.55
       get-source: 2.0.12
+    optional: true
 
   statuses@2.0.1: {}
 
   std-env@3.7.0: {}
 
-  stoppable@1.1.0: {}
+  stoppable@1.1.0:
+    optional: true
 
   stream-browserify@3.0.0:
     dependencies:
@@ -10624,6 +10651,7 @@ snapshots:
   undici@5.28.4:
     dependencies:
       '@fastify/busboy': 2.1.1
+    optional: true
 
   undici@6.19.4: {}
 
@@ -10635,6 +10663,7 @@ snapshots:
       node-fetch-native: 1.6.4
       pathe: 1.1.2
       ufo: 1.5.3
+    optional: true
 
   unified@10.1.2:
     dependencies:
@@ -11007,6 +11036,7 @@ snapshots:
       '@cloudflare/workerd-linux-64': 1.20240701.0
       '@cloudflare/workerd-linux-arm64': 1.20240701.0
       '@cloudflare/workerd-windows-64': 1.20240701.0
+    optional: true
 
   wrangler@3.63.2(@cloudflare/workers-types@4.20240620.0):
     dependencies:
@@ -11033,6 +11063,7 @@ snapshots:
       - bufferutil
       - supports-color
       - utf-8-validate
+    optional: true
 
   wrap-ansi@7.0.0:
     dependencies:
@@ -11050,11 +11081,13 @@ snapshots:
 
   ws@7.5.10: {}
 
-  ws@8.18.0: {}
+  ws@8.18.0:
+    optional: true
 
   xtend@4.0.2: {}
 
-  xxhash-wasm@1.0.2: {}
+  xxhash-wasm@1.0.2:
+    optional: true
 
   yallist@3.1.1: {}
 
@@ -11069,6 +11102,7 @@ snapshots:
       cookie: 0.5.0
       mustache: 4.2.0
       stacktracey: 2.1.8
+    optional: true
 
   zod-to-json-schema@3.22.5(zod@3.23.8):
     dependencies:
