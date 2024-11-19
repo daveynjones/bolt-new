@@ -1,0 +1,10 @@
+{
+  "version": "0.2.0",
+
+  // LAUNCH CONFIGURATIONS FOR DEBUGGING
+  // configurations for debugging the application
+  // supports debugging server and client
+  "configurations": [
+    // ... rest of your configurations
+  ]
+}
